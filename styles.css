@@ -5,14 +5,15 @@
 }
 
 body{
-    background-color: rgb(0, 0, 63);
+    background-color: #1E4CA1;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 h1{
     text-align: center;
-    font-size: 65px;
-    margin: 20px;
+    font-size: 8vw;
+    margin-top: 10vh;
+    text-transform: capitalize;
 }
 
 h1 a{
@@ -29,20 +30,20 @@ h1 a:hover{
     margin: 10vh 10vw;
     height: auto;
     padding: 10px;
-    background-color: rgb(52, 52, 163);
+    background-color: #4096EE;
     display: flex;
     flex-wrap: wrap;
     border-radius: 10px;
 }
 
 #trivias{
-    margin: 20px auto;
+    margin: 2vw auto;
     border: solid 3px black;
     border-left: solid 3px #5d5d5d;
     border-top: solid 3px #5d5d5d;
     min-width: 299px;
     width: 40%;
-    height: auto;
+    height: calc(width);
     text-align: center;
     border-radius: 15px;
 }
@@ -58,10 +59,10 @@ h1 a:hover{
     border-radius: 15px;
     display: block;
     width: 100%;
-    font-size: 60px;
     padding: 30px 10px;
     text-decoration: none;
     color: lightblue;
+    font-size: 6vw;
 }
 
 .trivia-1{
@@ -86,8 +87,12 @@ h1 a:hover{
     #trivias{
         width: 70vw;
         height: 25vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
     }
     #trivias a{
-        height: 100%;
+        font-size: 10vw;
     }
 }
