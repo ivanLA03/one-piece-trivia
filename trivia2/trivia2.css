@@ -31,6 +31,8 @@ body {
   margin-top: 20px;
 }
 .container .options {
+  user-select: none;
+  -webkit-user-drag: none;
   padding: 15px;
   display: block;
   background-color: white;
@@ -44,7 +46,7 @@ body {
   margin-top: 30px;
 }
 .container .options:hover {
-  background-color: rgb(45, 45, 192);
+  background-color: rgb(155, 155, 196);
   color: white;
 }
 .container .button {
@@ -59,4 +61,9 @@ body {
 }
 .container .back {
   margin-top: 5px;
+}
+
+.reset:hover,
+.back:hover{
+  background-color: #999;
 }

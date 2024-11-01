@@ -37,6 +37,7 @@ function showAnswers() {
 }
 
 function checkAnswers(selectedOption) {
+    toggleOptions(false)
     if (questions[numberQuestion].correctAnswer === selectedOption.textContent) {
         selectedOption.style.backgroundColor = "green"
         guessed++
@@ -51,6 +52,7 @@ function checkAnswers(selectedOption) {
 
     setTimeout(() => {
         changeColors()
+        toggleOptions(true)
     }, 1200);
 }
 
@@ -72,6 +74,10 @@ function reset(){
     numberQuestion = 0
     options.forEach(option => option.style.display = "block")
     main()
+}
+
+function toggleOptions(enable){
+    options.forEach(option => (option.style.pointerEvents = enable ? "auto" : "none"))
 }
 
 const back = () => window.location.href = "../index.html"
